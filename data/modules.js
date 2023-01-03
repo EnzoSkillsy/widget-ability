@@ -1,4 +1,3 @@
-import img from "../media/image 5.png";
 
 export const modules = {
     MODULE_fondamentaux: {
