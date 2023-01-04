@@ -70,7 +70,6 @@ const App = () => {
     useEffect(() => {
         setInProp(true)
     }, [currentQuestion])
-
     let step = tour >= Object.keys(questions).length ? Object.keys(questions).length : tour;
     return (
         <div style={{overflow: "hidden"}}>
@@ -130,9 +129,9 @@ const App = () => {
                                         <h1 className={'text-3xl my-5'} style={{textAlign: "center"}}>Optez pour HR box qui
                                             vous convient</h1>
                                     </div>
-                                    <div className={results.length === 1 ? 'modules2':'modules'}>
+                                    <div className={results.length !== 1 ? 'modules' : 'modules2'}>
                                         {results.map((el, index) => (
-                                            <a href=""
+                                            <a key={index} href="#"
                                                className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
                                                 <div className="relative pb-48 overflow-hidden">
                                                     <img className="absolute inset-0 h-full w-full object-cover"
@@ -166,7 +165,7 @@ const App = () => {
                                                 peuvent vous intérésser</h1>
                                             <div className={moduleNonRetenu.length === 1 ? 'modules2': 'modules'}>
                                                 {moduleNonRetenu.map((el, index) =>
-                                                    <a href=""
+                                                    <a key={index} href=""
                                                        className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
                                                         <div className="relative pb-48 overflow-hidden">
                                                             <img className="absolute inset-0 h-full w-full object-cover"
