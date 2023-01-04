@@ -130,7 +130,7 @@ const App = () => {
                                         <h1 className={'text-3xl my-5'} style={{textAlign: "center"}}>Optez pour HR box qui
                                             vous convient</h1>
                                     </div>
-                                    <div className={'modules'}>
+                                    <div className={results.length === 1 ? 'modules2': 'modules'}>
                                         {results.map((el, index) => (
                                             <a href=""
                                                className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
