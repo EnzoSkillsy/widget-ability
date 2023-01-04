@@ -132,29 +132,30 @@ const App = () => {
                                     <div className={results.length !== 1 ? 'modules' : 'modules2'}>
                                         {results.map((el, index) => (
                                             <a key={index} href="#"
-                                               className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                                               className="c-card flex flex-col bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
                                                 <div className="relative pb-48 overflow-hidden">
                                                     <img className="absolute inset-0 h-full w-full object-cover"
                                                          src={el.img}
                                                          alt=""/>
                                                 </div>
-                                                <div className="p-4">
-                                                    <div className={'bande rounded'}
-                                                         style={{backgroundColor: el.color}}></div>
-                                                    <h2 className="mt-2 mb-2  font-bold">{el.titre}</h2>
-                                                    <p className="text-sm h-[60px] text-ellipsis overflow-hidden">{el.sousTitre}</p>
+                                                <div className="p-4 grow flex flex-col">
+                                                    <div className={"grow"}>
+                                                        <div className={'bande rounded'}
+                                                             style={{backgroundColor: el.color}}></div>
+                                                        <h2 className="mt-2 mb-2  font-bold">{el.titre}</h2>
+                                                        <p className="text-sm h-[60px] text-ellipsis overflow-hidden">{el.sousTitre}</p>
+                                                    </div>
                                                     <div className="mt-3 flex items-center">
                                                         <span className="font-bold text-xl">{el.price}</span>&nbsp;
-                                                        <span className="text-sm font-semibold">€/HT*</span>
+                                                        <span className="text-sm font-semibold">€</span>
                                                     </div>
                                                 </div>
                                                 <div className="p-4 border-t border-b text-xs text-gray-700">
-                                                    <a
-                                                        href={"#"}
+                                                    <span
                                                         className="block w-full rounded-md border border-gray-800 bg-gray-800 py-2 text-center text-sm font-semibold text-white hover:bg-gray-900"
                                                     >
                                                         Ajouter au panier
-                                                    </a>
+                                                    </span>
                                                 </div>
                                             </a>
                                         ))}
@@ -166,17 +167,19 @@ const App = () => {
                                             <div className={moduleNonRetenu.length === 1 ? 'modules2': 'modules'}>
                                                 {moduleNonRetenu.map((el, index) =>
                                                     <a key={index} href=""
-                                                       className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                                                       className="c-card flex flex-col bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
                                                         <div className="relative pb-48 overflow-hidden">
                                                             <img className="absolute inset-0 h-full w-full object-cover"
                                                                  src={el.img}
                                                                  alt=""/>
                                                         </div>
-                                                        <div className="p-4">
-                                                            <div className={'bande rounded'}
-                                                                 style={{backgroundColor: el.color}}></div>
-                                                            <h2 className="mt-2 mb-2  font-bold">{el.titre}</h2>
-                                                            <p className="text-sm h-[60px] text-ellipsis overflow-hidden">{el.sousTitre}</p>
+                                                        <div className="p-4 grow flex flex-col">
+                                                            <div className={"grow"}>
+                                                                <div className={'bande rounded'}
+                                                                     style={{backgroundColor: el.color}}></div>
+                                                                <h2 className="mt-2 mb-2  font-bold">{el.titre}</h2>
+                                                                <p className="text-sm h-[60px] text-ellipsis overflow-hidden">{el.sousTitre}</p>
+                                                            </div>
                                                             <div className="mt-3 flex items-center">
                                                                 <span className="font-bold text-xl">{el.price}</span>&nbsp;
                                                                 <span className="text-sm font-semibold">€</span>
@@ -246,16 +249,19 @@ const App = () => {
                                 <div className={'modules'}>
                                     {moduleNonRetenu.map((el, index) =>
                                         <a href=""
-                                           className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                                           className="c-card flex flex-col bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
                                             <div className="relative pb-48 overflow-hidden">
                                                 <img className="absolute inset-0 h-full w-full object-cover"
                                                      src={el.img}
                                                      alt=""/>
                                             </div>
-                                            <div className="p-4">
-                                                <div className={'bande rounded'} style={{backgroundColor: el.color}}></div>
-                                                <h2 className="mt-2 mb-2  font-bold">{el.titre}</h2>
-                                                <p className="text-sm h-[60px] text-ellipsis overflow-hidden">{el.sousTitre}</p>
+                                            <div className="p-4 grow flex flex-col">
+                                                <div className={"grow"}>
+                                                    <div className={'bande rounded'}
+                                                         style={{backgroundColor: el.color}}></div>
+                                                    <h2 className="mt-2 mb-2  font-bold">{el.titre}</h2>
+                                                    <p className="text-sm h-[60px] text-ellipsis overflow-hidden">{el.sousTitre}</p>
+                                                </div>
                                                 <div className="mt-3 flex items-center">
                                                     <span className="font-bold text-xl">{el.price}</span>&nbsp;
                                                     <span className="text-sm font-semibold">€</span>
