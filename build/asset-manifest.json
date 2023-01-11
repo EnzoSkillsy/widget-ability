@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c0d7360.css",
-    "main.js": "/static/js/main.88986d28.js",
-    "index.html": "/index.html",
-    "main.3c0d7360.css.map": "/static/css/main.3c0d7360.css.map",
-    "main.88986d28.js.map": "/static/js/main.88986d28.js.map"
+    "main.css": "https://cdn.jsdelivr.net/gh/skillsy-io/widget-ability@master/static/css/main.3c0d7360.css",
+    "main.js": "https://cdn.jsdelivr.net/gh/skillsy-io/widget-ability@master/static/js/main.41426874.js",
+    "index.html": "https://cdn.jsdelivr.net/gh/skillsy-io/widget-ability@master/index.html",
+    "main.3c0d7360.css.map": "https://cdn.jsdelivr.net/gh/skillsy-io/widget-ability@master/static/css/main.3c0d7360.css.map",
+    "main.41426874.js.map": "https://cdn.jsdelivr.net/gh/skillsy-io/widget-ability@master/static/js/main.41426874.js.map"
   },
   "entrypoints": [
     "static/css/main.3c0d7360.css",
-    "static/js/main.88986d28.js"
+    "static/js/main.41426874.js"
   ]
 }
